@@ -72,7 +72,7 @@ DEFAULT_IMPORTANCE_JUDGE = {
     'prompt': {
         'template': """On the scale of 1 to 10, where 1 is purely unimportant and 10 is extremely important, rate the likely importance of the following piece of message.
 Message: {message}
-Please return STRICT JSON only in one object, for example {"score": 7}. Do not output any other texts.""",
+Please return STRICT JSON only in one object, for example {{"score": 7}}. Do not output any other texts.""",
         'input_variables': ['message']
     },
     'post_scale': 10,
